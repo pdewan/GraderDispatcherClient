@@ -1,10 +1,10 @@
 package edu.unc.cs.dispatcherServer;
 
-import gradingTools.server.DriverServerObject;
+import gradingTools.server.RemoteGraderServer;
 
 import java.rmi.Remote;
 
 public interface DispatcherRegistry extends Remote{
 
-	void registerDriverServer (DriverServerObject aServerObject);
+	void registerDriverServer (RemoteGraderServer aServerObject, GraderServerDescription aDispatcherDescription);
 }
