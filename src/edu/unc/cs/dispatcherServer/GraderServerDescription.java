@@ -7,5 +7,6 @@ public interface GraderServerDescription extends Serializable {
 	String getSection();
 	String getType();
 	String getAssignment();
+	String getClientName();
 
 }
